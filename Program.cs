@@ -8,7 +8,7 @@
             Helpers.PrintStartMenu();
 
             // Prompt user to choose from menu
-            string? choice = Helpers.GetUserInput("\n➡️ Please make a selection:");
+            string? choice = Helpers.GetUserInput("\n➡️ Select:");
 
             // User choice input validation
             while (true)
@@ -16,7 +16,9 @@
                 if (string.IsNullOrEmpty(choice) || (choice != "1" && choice != "2"))
                 {
                     Helpers.SetConsoleColor("red");
-                    choice = Helpers.GetUserInput("❌ Please make a selection [1 or 2]:");
+                    Console.WriteLine("❌ Please enter 1 or 2\n");
+                    Helpers.ResetConsoleColor();
+                    choice = Helpers.GetUserInput("➡️ Select:");
                 }
                 else break;
             }

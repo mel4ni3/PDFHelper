@@ -53,9 +53,11 @@ namespace CodeJam4
 
                 // Print contents
                 Helpers.SetConsoleColor("blue");
-                Console.WriteLine($"\n{Path.GetFileName(path)}:\n");
+                Console.WriteLine($"\n📄 {Path.GetFileName(path)}:");
                 Helpers.ResetConsoleColor();
+                Console.WriteLine("----------");
                 Console.WriteLine(result);
+                Console.WriteLine("----------");
             }
         }
 
@@ -109,6 +111,7 @@ namespace CodeJam4
             string? header = Helpers.GetUserInput("➡️ Enter a header for your new PDF file (press Enter to skip):");
 
             Console.WriteLine("➡️ Enter PDF content (press Ctrl+Z to end):");
+            Console.WriteLine("----------");
             string txt = GetMultiLineTxt(name);
 
             if (string.IsNullOrEmpty(header))
@@ -140,7 +143,7 @@ namespace CodeJam4
                     // CTRL+Z is detected when both Control key and 'Z' key are pressed.
                     if (keyInfo.Key == ConsoleKey.Z && (keyInfo.Modifiers & ConsoleModifiers.Control) != 0)
                     {
-                        Console.WriteLine();
+                        Console.WriteLine("\n----------");
                         Helpers.SetConsoleColor("green");
                         Console.WriteLine($"\n✅ You successfully created a PDF called {name}.pdf!");
                         Helpers.ResetConsoleColor();

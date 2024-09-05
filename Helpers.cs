@@ -79,7 +79,7 @@
         // Method to prompt user to quit or restart the app
         public static void EndOfProgram()
         {
-            string? choice = Helpers.GetUserInput("\n➡️ Press 'Q' to quit, Press 'R' to return to the main menu:");
+            string? choice = Helpers.GetUserInput("\n➡️ Press 'Q' to quit, Press 'R' to restart:");
 
             while (true)
             {
