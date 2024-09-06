@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e2d2d846-49c1-4a21-8d5b-a9c8679620e4)# PDFHelper
+# PDFHelper
 ## Overview
 PDFHelper is a console application that allows you to:
 
