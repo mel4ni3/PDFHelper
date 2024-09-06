@@ -7,6 +7,7 @@ PDFHelper is a console application that allows you to:
 
 ## PDF location:
 PDFHelper\bin\Debug\net8.0
+<br>
 When entering the file path of a pdf to get its text, only enter the file name and extension of a pdf in this directory.
 
 ## Dependencies
